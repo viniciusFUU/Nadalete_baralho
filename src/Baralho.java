@@ -26,19 +26,19 @@ public class Baralho {
         int qtdCartasNoBaralho = baralho.length;
 
         for (int i=0; i < qtdCartasNoBaralho; i++){
-            int valorAletorio = (int) (Math.random() * qtdCartasNoBaralho);
+            int posicaoAleatoriaDaCarta = (int) (Math.random() * qtdCartasNoBaralho);
 
-            Carta atual = baralho[i];
-            baralho[i] = baralho[valorAletorio];
-            baralho[valorAletorio] = atual;
+            Carta cartaAtual = baralho[i];
+            baralho[i] = baralho[posicaoAleatoriaDaCarta];
+            baralho[posicaoAleatoriaDaCarta] = cartaAtual;
         }
     }
 
     public Carta distribuirCartas(){
-        Carta baralhoAtual = baralho[posicao];
+        Carta cartaAtual = baralho[posicao];
         posicao++;
 
-        return baralhoAtual;
+        return cartaAtual;
     }
 
     public void imprimeBaralho(){
