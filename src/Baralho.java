@@ -51,11 +51,4 @@ public class Baralho {
             System.out.println(carta + " de " + naipe); 
         }
     }
-
-    public static void main(String[] args) throws Exception {
-        Baralho baralho = new Baralho();
-        // baralho.imprimeBaralho();
-        baralho.embaralha();
-        baralho.imprimeBaralho();
-    }
 }
