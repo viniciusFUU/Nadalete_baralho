@@ -34,11 +34,11 @@ public class Baralho {
         }
     }
 
-    public Carta distribuirCartas(){
+    public String distribuirCartas(){
         Carta cartaAtual = baralho[posicao];
         posicao++;
 
-        return cartaAtual;
+        return cartaAtual.getCarta() + " de " + cartaAtual.getNaipe();
     }
 
     public void imprimeBaralho(){

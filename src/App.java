@@ -2,8 +2,12 @@ public class App {
     public static void main(String[] args) throws Exception {
         Baralho baralho = new Baralho();
 
-        baralho.imprimeBaralho();
+        // baralho.imprimeBaralho();
         baralho.embaralha();
-        baralho.imprimeBaralho();
+        // baralho.imprimeBaralho();
+        System.out.println(baralho.distribuirCartas());
+        System.out.println(baralho.distribuirCartas());
+        System.out.println(baralho.distribuirCartas());
+        System.out.println(baralho.distribuirCartas());
     }
 }
